@@ -69,7 +69,7 @@ BinarySearchTree.prototype.contains = function (value){ // conti8ene
     if (this.left) this.left.depthFirstForEach(cb, order);
     if (order === 'in-order') cb(this.value);
     if (this.right) this.right.depthFirstForEach(cb, order);
-    if (order === 'post-order') cb(this.value);
+    if (order === 'post-order') cb(this.value);// otra forma de hacerlo
 }
 BinarySearchTree.prototype.breadthFirstForEach = function (cb,array=[]){
 if(this.left)array.push(this.left);
